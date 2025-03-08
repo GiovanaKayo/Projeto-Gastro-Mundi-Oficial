@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-family: "abin", "sans-serif"
+}
+
+h1, h2 {
+    font-family: "Bree serif", sans-serif;
+}
+
+#slider {
+    animation: appear .5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+#curiosidades-text h1, p, button {
+animation: lateral .5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+#img1 {
+animation: lateral .5s linear;
+animation-timeline: view();
+animation-range: entry 0% cover 40%;
+}
+#img2{
+animation: lateral .5s linear;
+animation-timeline: view();
+animation-range: entry 0% cover 40%;
+}
+#img3 {
+animation: lateral .5s linear;
+animation-timeline: view();
+animation-range: entry 0% cover 40%;
+}
+
+
+@keyframes appear {
+from {
+opacity: 0;
+/* clip-path: inset(100% 100% 0 0); caso queira que venha da diagonal de baixp */
+/*  scale: 0.5; Se quiser que seja de baixo para cima */
+/* transform: translateX(-100px); se quiser que seja lateral */
+transform: translateX(-100px);
+}
+to {
+    opacity: 1;
+    transform: translateX(0px);
+    /* clip-path: inset(0 0 0 0); caso queira que venha da diagonal de baixp */
+    /* transform: translateX(-0px); se quiser que seja lateral */
+    /*  scale: 1; Se quiser que seja de baixo para cima */
+}
+
+}
+
+@keyframes lateral {
+from {
+    scale: 0.5;
+opacity: 0;
+/* clip-path: inset(100% 100% 0 0); caso queira que venha da diagonal de baixp */
+/*  scale: 0.5; Se quiser que seja de baixo para cima */
+/* transform: translateX(-100px); se quiser que seja lateral */
+
+}
+to {
+    opacity: 1;
+scale: 1;
+    /* clip-path: inset(0 0 0 0); caso queira que venha da diagonal de baixp */
+    /* transform: translateX(-0px); se quiser que seja lateral */
+    /*  scale: 1; Se quiser que seja de baixo para cima */
+}
+
+}
+
+a::after{
+    content: " ";
+    background-color: #000000;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    height: 3px;
+    transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+nav a:hover{
+    font-weight: 500;
+    text-shadow: 0px 1px 1px #ffff;
+}
+
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#homecima{
+    background-image: url(../images/curiosidades-receitas/Churrasco\ 2\ ps-1200.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 8px 20px;
+    color: white;
+    opacity: 0.9;
+}
+
+#logo {
+    height: 80px;
+}
+
+#logo img{
+    width: 210%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#menu a {
+    margin-left: 20px;
+}
+
+#menu  a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center; 
+    background-color: rgba(0, 0, 0, 0.479); 
+}
+
+.btn {
+    display: inline-block; 
+    padding: 10px 20px; 
+    margin-top: 20px; 
+    background-color: darkolivegreen; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 60px;
+    border: none; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+}
+
+.btn:hover {
+    width: 35%;
+    height: 36px;
+    background-color: #D9C398;
+    transition: 0.5s;
+    color: black;
+    box-shadow: 0px 10px 50px 2px rgb(126, 163, 141)
+}
+
+.curiosidades-section {
+    display: flex;
+    text-align: center;
+    height: 90vh;
+}
+
+.curiosidades-container {
+    display: flex;
+    max-width: 1900px;
+    margin: auto; 
+    width: 100%;
+}
+
+.curiosidades-image, .curiosidades-image img {
+    max-width: 463px;
+}
+
+.curiosidades-text {
+    padding: 40px; 
+    font-size: 16px;
+}
+.curiosidades-text p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+#curiosidade{
+    background-color: #A18D65;
+}
+
+#fundo{
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#restaurante{
+    width: 100%;
+    height: 200vh;
+    background-image: url(../images/imagem-fundo/fundo2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#overlay-2{
+    background-color: rgba(0, 0, 0, 0.286);
+    width: 100%;
+    height: 100%;
+}
+
+#section1{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-between;
+}
+
+#img1{
+    background-image: url(../images/novazelandiarest.jpg);
+    background-size: cover;
+    width: 600px;
+    height: 90%;
+    margin-right: 5%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px;
+    color: white;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+}
+
+#img1 #botaoimg1 a:hover{
+    background-color: #000;
+    color: aliceblue;
+}
+
+#txt1{
+    width: 50%;
+    height: 80%;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: larger;
+}
+
+#txt1 p{
+    margin-top: 40px;
+    font-size: large;
+}
+
+#section2{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-between;
+    margin-top:5%;
+}
+
+#img2{
+    background-image: url(../images/outback.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 70%;
+    margin-left: 2%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+    color: white;
+}
+
+#botaoimg1 a:hover{
+    background-color: #000;
+    color: aliceblue;
+    transition: .4s ease-in-out;
+}
+#botaoimg2 a:hover{
+    background-color: #000;
+    color: aliceblue;
+    transition: .4s ease-in-out;
+}
+#botaoimg3 a:hover{
+    background-color: #000;
+    color: aliceblue;
+    transition: .4s ease-in-out;
+}
+
+#img3{
+    background-image: url(../images/fijirest.webp);
+    background-size: cover;
+    width: 600px;
+    height: 70%;
+    margin-right: 2%;
+    background-position: center center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+    color: white;
+}
+
+#img3 #botaoimg3 a:hover{
+    background-color: #000;
+    color: aliceblue;
+}
+
+#txtimg1{
+    width: 50%;
+    margin-bottom: 12%;
+}
+
+#botaoimg1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 30%;
+
+}
+
+#botaoimg1 a{
+    background-color: yellow;
+    border: 0;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#txtimg2{
+    width: 50%;
+    margin-bottom: 8%;
+}
+
+#botaoimg2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 30%;
+}
+
+#botaoimg2 a{
+    background-color: yellow;
+    border: 0;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#txtimg3{
+    width: 50%;
+    margin-bottom: 8%;
+}
+
+#botaoimg3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 30%;
+}
+
+#botaoimg3 a{
+    background-color: yellow;
+    border: 0;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card-list .card-item {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    width: 400px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(30px);
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card-list .card-item .user-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    border: 3px solid white;
+    padding: 4px;
+}
+
+.card-list .card-item .user-profession {
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 14px 0 40px;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+}
+
+.chefs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+#rodape{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#rodape h3,p{
+    color: white;
+}
+
+#rodape h3{
+    font-size: 20px;
+}
+
+#rodape p{
+    font-size: 16px;
+}
+
+#texto-rodape p{
+    margin-top: 20px;
+}
+
+
+#links h3{
+    margin-left: 18%;
+    margin-top: 10%;
+}
+
+#links li a{
+    line-height: 30px;
+}
+
+#suporte h3{
+    margin-left: 18%;
+    margin-top: 10%;
+}
+
+#suporte li a{
+    line-height: 30px;
+}
+
+#contato h3{
+    margin-top: 5%;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer p{ 
+    animation: none;
+}
+
+.insta-chefes img{
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+#txt1{
+    color: white;
+    font-size: 30px;
+    width: 45%;
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    padding: 35px;
+    background-color: rgba(0, 0, 0, 0.344);
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+#txt1 p{
+    font-size: 21px;
+    text-align: left;
+}

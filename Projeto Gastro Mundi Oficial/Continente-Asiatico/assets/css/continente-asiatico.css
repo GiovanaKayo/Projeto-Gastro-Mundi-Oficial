@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter:opsz,wght@14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url(../images/imagem-fundo/Imagem\ de\ fundo-1200.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: verdana;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-family: "Cabin", sans-serif;
+    font-weight: 500;
+}
+
+h1, h2 {
+    font-family: "Bree serif", sans-serif;
+}
+
+#logo img{
+    max-width: 100%;
+    width: 38%;
+    margin-top: 2%;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.479);
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+li a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+a::after{
+    content: " ";
+    background-color: #57590B;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    height: 2px;
+    transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+nav a:hover{
+    font-weight: 500;
+    text-shadow: 0px 1px 1px #ffff;
+}
+
+#titulo-principal{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1{
+    margin-top: 15%;
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+    letter-spacing: 5px;
+}
+
+#texto-informacoes{
+    text-shadow: 2px 2px black;
+    letter-spacing: 2px;
+}
+
+.descubra-mais button{
+    width: 15%;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    background-color: #57590B;
+    color: white;
+    margin-top: 2%;
+    font-size: 15px;
+}
+
+.descubra-mais button:hover{
+    width: 16%;
+    height: 36px;
+    background-color: #D9C398;
+    transition: 0.5s;
+    color: black;
+    box-shadow: 0px 10px 50px 2px rgb(126, 163, 141);
+}
+
+#carrossel{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 20%;
+}
+
+#container-slider{
+    width: 400%;
+    height: 105vh;
+    display: flex;
+    align-items: center;
+}
+
+#container-slider input{
+    display: none;
+}
+
+#informativo-carrossel {
+    position: absolute;
+    z-index: 1;
+    top: 32%;
+    left: 85%;
+    color: white;
+    background-color: #00000079;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container-images{
+    width: 25%;
+    height: auto;
+    position: relative;
+    transition: 1s all;
+    z-index: 0;
+}
+
+.container-images img{
+    width: 100vw;
+}
+
+.nav-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-auto {
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer; 
+    margin: 10px;
+}
+
+.nav-manual{ 
+    position: absolute;
+    width: 100%;
+    margin-top: 28%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 1px solid #fff;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer; 
+    margin: 10px;
+}
+
+.manual-btn:hover{
+    transition: 0.5s;
+    background-color: #fff;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: #fff;
+}
+#radio4:checked ~ .nav-auto .auto-btn4{
+    background-color: #fff;
+}
+#radio5:checked ~ .nav-auto .auto-btn5{
+    background-color: #fff;
+}
+#radio6:checked ~ .nav-auto .auto-btn6{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .on {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .on{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .on {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .on {
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .on {
+    margin-left: -100%;
+}
+
+#radio6:checked ~ .on {
+    margin-left: -125%;
+}
+
+
+#beef-rendang button{
+    width: 180%;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    background-color: #F6BE3B;
+    color: #000;
+    text-shadow: 2px 1px #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#beef-rendang button:hover{
+    background-color: black;
+    color: #F6BE3B;
+    text-shadow: none;
+}
+
+#curiosidades{
+    position: relative;
+    display: flex;
+    background-color: #D9C398;
+    width: 100%;
+    height: 104vh;
+}
+
+#imagem-curiosidade img{
+    position: relative;
+    width: 38vw;
+}
+
+#texto-curiosidade{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#texto-curiosidade h2{
+    margin-top: 8%;
+    text-shadow: 2px 2px #fff;
+    color: #000;
+    font-size: 35px;
+}
+
+.p-curiosidades{
+    text-align: center;
+    margin-top: 8%;
+    color: #000;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.descubra-curiosidades{
+    margin-top: 8%;
+    align-items: center;
+}
+
+#restaurantes{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/imagem-fundo/textura.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 180vh;
+}
+
+#container{
+    display: flex;
+    flex-direction: row; 
+}
+
+#texto-restaurantes {
+    width: 50%;
+    background-color: #212529;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-top: 4%;
+}
+
+#texto-restaurantes h2{
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+    margin-top: 5%;
+    text-shadow: 2px 2px #000;
+}
+
+#texto-restaurantes p{
+    text-align: start;
+    margin-top: 4%;
+    padding: 20px;
+    text-shadow: 2px 2px #000;
+}
+
+#imagem-restaurante img{
+    width: 60%;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-top: 8%;
+    margin-left: 25%;
+}
+
+#conheca-restaurante button{
+    position: absolute;
+    top: 85%;
+    right: 45%;
+    width: 25%;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    background-color: #F6BE3B;
+    color: #000;
+    text-shadow: 2px 1px #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#conheca-restaurante button:hover{
+    background-color: black;
+    color: #F6BE3B;
+    text-shadow: none;
+}
+
+#conheca-restaurante span{
+    position: absolute;
+    top: 81%;
+    right: 60%;
+    color: #fff;
+    text-shadow: 2px 1px #000;
+}
+
+#container2{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}   
+
+#imagem-restaurante2{
+    position: relative;
+    width: 60%;
+    margin-left: 11%;
+}
+
+#imagem-restaurante2 img{
+    width: 110%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+}
+
+#conheca-restaurante2 button{
+    position: absolute;
+    bottom: 10%;
+    left: 68%;
+    width: 30%;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    background-color: #F6BE3B;
+    color: #000;
+    text-shadow: 2px 1px #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#conheca-restaurante2 button:hover{
+    background-color: black;
+    color: #F6BE3B;
+    text-shadow: none;
+}
+
+#conheca-restaurante2 span{
+    position: absolute;
+    bottom: 17%;
+    left: 68%;
+    color: #fff;
+    text-shadow: 2px 1px #000;
+}
+
+#imagem-restaurante3{
+    width: 70%;
+    margin-left: 12%;
+}
+
+#imagem-restaurante3 img{
+    width: 110%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+}
+
+#conheca-restaurante3 button{
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    width: 40%;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    background-color: #F6BE3B;
+    color: #000;
+    text-shadow: 2px 1px #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#conheca-restaurante3 button:hover{
+    background-color: black;
+    color: #F6BE3B;
+    text-shadow: none;
+}
+
+#conheca-restaurante3 span{
+    position: absolute;
+    top: 80%;
+    left: 11%;
+    color: #fff;
+    text-shadow: 2px 1px #000;
+}
+
+#chefs{
+    background-image: url(../images/imagem-fundo/Falafel\ 3.png);
+    background-size: cover;
+}
+
+.card-list .card-item {
+    color: #000;
+    background: #cabb9c;
+    width: 400px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(30px);
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid #57590B;
+    margin-top: 5%;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+}
+
+.card-list .card-item .user-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    border: 3px solid #57590B;
+    padding: 4px;
+    max-width: fit-content;
+}
+
+.card-list .card-item .user-profession {
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    margin: 14px 0 50px;
+}
+
+.card-list p{
+    font-size: 14px;
+    color: #000;
+}
+
+.user-name{
+    font-size: 20px;
+}
+
+.icon{
+    margin-top: 10px;
+}
+
+.icon-insta{
+    margin-top: 12px;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 900px;
+    margin: 0 230px 65px;
+}
+
+.chefs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+#rodape{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#rodape h3,p{
+    color: white;
+}
+
+#rodape h3{
+    font-size: 20px;
+}
+
+#rodape p{
+    font-size: 16px;
+}
+
+#texto-rodape p{
+    margin-top: 20px;
+}
+
+
+#links h3{
+    margin-left: 18%;
+    margin-top: 10%;
+}
+
+#links li a{
+    line-height: 30px;
+}
+
+#suporte h3{
+    margin-left: 18%;
+    margin-top: 10%;
+}
+
+#suporte li a{
+    line-height: 30px;
+}
+
+#contato h3{
+    margin-top: 5%;
+}
+
+#contato li p{
+    font-size: 14px;
+}
+
+
+
+
+
+#titulo-principal, #texto-curiosidade, #imagem-curiosidade,#texto-restaurantes,#imagem-restaurante,#imagem-restaurante2,#imagem-restaurante3{
+    visibility: hidden;
+}
+

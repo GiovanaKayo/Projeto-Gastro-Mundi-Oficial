@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    color: rgba(229, 229, 229, 0.7);
+    text-align: center;
+    background-image: url(/Continente-Asiatico/assets/images/imagem-fundo/Imagem\ mapa\ mundi\ melhorada-1500.jpg);
+    background-size: cover;
+  }
+  
+  .description {
+    max-width: 600px;
+    margin: 0 auto;
+    color: rgba(229, 229, 229, 0.7);
+  }
+  
+  div, img footer {
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 10px;
+  }
+  
+  h1 {
+    font-size: 36pt;
+    font-family: "Merriweather", sans-serif;
+    letter-spacing: 14px;
+    color: white;
+    text-shadow: 2px 2px black;
+    margin-top: 5%;
+    opacity: 0.8;
+  }
+  
+  h2 {
+    font-size: 24pt;
+  }
+  
+  h3 {
+    font-size: 18pt;
+  }
+  
+  h4 {
+    font-size: 16pt;
+  }
+  
+  h5 {
+    font-size: 14pt;
+  }
+  
+  h6 {
+    font-size: 12pt;
+  }
+  
+  p {
+    font-size: 12pt;
+    margin-bottom: 12pt;
+    color: white;
+    text-shadow: 2px 2px black;
+    opacity: 0.8;
+  }
+  
+  strong {
+    font-weight: 900;
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    color: #e5e5e5;
+  }
+  
+  a {
+    transition: color 0.25s ease-in-out;
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #dff3fd;
+  }
+  a:visited {
+    color: #dff3fd;
+  }
+  li.active a, a:hover, a:active {
+    color: #e5e5e5;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .centered-y {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .distribution-map {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .distribution-map > img {
+    width: 92%;
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.85);
+    transition: 0.5s ease-in-out;
+  }
+  .distribution-map .map-point {
+    cursor: pointer;
+    outline: none;
+    z-index: 0;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.9;
+    transform: translate(-50%, -50%);
+    -moz-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+    -o-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+    -webkit-transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out, z-index 0.25s ease-in-out;
+    -webkit-transition-delay: 0.25s, 0.25s, 0.25s, 0.25s;
+    transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+    background: rgba(0, 0, 0, 0.85);
+    border: 5px solid #a18d65;
+  }
+  .distribution-map .map-point .content {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: overlay;
+  }
+  .distribution-map .map-point:active, .distribution-map .map-point:focus {
+    margin: 0;
+    padding: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    width: 300px;
+    height: 220px;
+    color: #e5e5e5;
+    z-index: 1;
+    transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
+  }
+  .distribution-map .map-point:active .content, .distribution-map .map-point:focus .content {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    -moz-transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    -o-transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    -webkit-transition: opacity 0.25s ease-in-out, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    -webkit-transition-delay: 0.25s, 0s, 0s;
+    transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    
+  }
+  .distribution-map .map-point:active .content a:hover, .distribution-map .map-point:active .content a:active, .distribution-map .map-point:focus .content a:hover, .distribution-map .map-point:focus .content a:active {
+    color: #ebc460;
+  }
+  
+  .centered-y h2 {
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-family: "Merriweather", sans-serif;
+  }
+
+  .centered-y p{
+    font-size: 14px;
+    color: white;
+  }
+
+
+
+
+  
+  

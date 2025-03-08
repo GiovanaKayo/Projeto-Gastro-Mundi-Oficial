@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter:opsz,wght@14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#fundo{
+    position: relative;
+    width: 100vh;
+    height: auto;
+    color: white;
+    font-family: verdana;
+    margin: 0 auto;
+    background-color: #a18d65;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+}
+
+h1, h2 {
+    font-family: "Bree serif", sans-serif;
+}
+
+.cabecalho{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 80px;
+}
+
+.logo img{
+    width: 180%;
+    height: 100%;
+    object-fit: cover;
+}
+.contato button{
+    background-color: #41521f;
+    border: none;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    padding: 12px 40px;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin-right: 80px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.contato button:hover{
+    background-color: #D9C398;
+}
+
+.contato button{
+    color: white;
+    text-decoration: none;
+}
+#video-pratos{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+#principal-receitas{
+    background-color: #a18d65;
+}
+
+#conteudo-pratos{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#imagem-lateral img{
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+}
+
+#video-youtube iframe{
+    position: relative;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+}
+
+.descri-imagem{
+    color: #000;
+}
+
+#receita{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container{
+    position: relative;
+    width: 80%;
+    height: auto;
+    background-color: #ffff;
+    color: #000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 5%;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+}
+
+.prato{
+    text-align: center;
+    margin-top: 5%;
+    text-shadow: 2px 1px #D9C398;
+}
+
+#container::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 20px solid transparent;
+    border-top: 20px solid #F6BE3B;
+    border-right: 20px solid #F6BE3B;
+}
+
+#conteudo-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 30px;
+}
+
+.conteudo-ingredientes{
+   margin-left: 10%;
+    margin-top: 5%;
+}
+
+.conteudo-ingredientes p{
+    padding: 5px;
+}
+
+
+#conteudo-receita{
+    width: 50%;
+}
+
+.ingredientes{
+    margin-left: 10%;
+    margin-top: 10%;
+    text-shadow: 2px 1px #D9C398;
+}
+
+.passos{
+    text-align: center;
+    margin-top: 5%;
+    text-shadow: 2px 1px #D9C398;
+}
+
+.texto-receita{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#modo-preparo{
+    width: 50%;
+}
+
+.preparo{
+    text-align: center;
+    margin-top: 10%;
+    text-shadow: 2px 1px #D9C398;
+}
+
+.preparo-ingredientes {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.preparo-ingredientes p{
+    padding: 5px;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+#rodape{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#rodape h3,p{
+    color: white;
+}
+
+#rodape h3{
+    font-size: 20px;
+}
+
+#rodape p{
+    font-size: 16px;
+}
+
+#texto-rodape p{
+    margin-top: 20px;
+}
+
+
+#links h3{
+    margin-left: 18%;
+    margin-top: 10%;
+}
+
+#links li a{
+    line-height: 30px;
+}
+
+#links li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#suporte h3{
+    margin-left: 18%;
+    margin-top: 10%;
+}
+
+#suporte li a{
+    line-height: 30px;
+    color: #fff;
+}
+
+#suporte li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#contato h3{
+    margin-top: 5%;
+}
+
+#contato li p{
+    font-size: 14px;
+}

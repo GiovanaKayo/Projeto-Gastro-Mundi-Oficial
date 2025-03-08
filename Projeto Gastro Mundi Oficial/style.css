@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #41521f;
+    --secundary-color: #a18d65; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-image: url(Continente-Asiatico/assets/images/imagem-fundo/thumbnail_Imagem\ escolhida\ mais\ escura-1200.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 18%;
+}
+
+.cabecalho{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo{
+    height: 80px;
+}
+
+.logo img{
+    width: 230%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contato button{
+    background-color: #41521f;
+    border: none;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    padding: 8px 40px;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin-right: 80px;;
+    cursor: pointer;
+}
+
+.contato button:hover{
+    background-color: #D9C398;
+}
+
+.contato a{
+    color: white;
+    text-decoration: none;
+}
+
+.informacoes{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.titulos{
+    letter-spacing: 10px;
+    text-shadow: 3px 3px black;
+    margin-top: 5%;
+    color: white;
+}
+
+.titulos .info{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.cadastrar button{
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin-top: 2%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.barco{
+    margin-bottom: 2%;
+}
+
+.cadastrar button:hover{
+    background-color: var(--secundary-color);
+    padding: 12px 22px;
+    text-shadow: 1px 1px black;
+}
+
+.cadastrar a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+

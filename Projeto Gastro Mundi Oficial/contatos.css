@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    display: flex;
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    padding: 60px;
+    justify-content: space-between;
+    background-image: url(/Continente-Asiatico/assets/images/imagem-fundo/textura.jpg);
+    background-image: cover;
+}
+
+
+#imagem {
+    height: 100%;
+    width: 40%;
+
+}
+#imagem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#titulo {
+    font-size: 40px;
+    margin-left: 10%;
+    color: #fff;
+    text-shadow: 2px 2px rgb(126, 163, 137);
+}
+
+#formulario {
+    margin-top: 8%;
+}
+
+#formulario label{
+    color: #fff;
+}
+
+#formulario input{
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+
+#formulario textarea{
+    border-radius: 10px;
+    width: 60%;
+    height: 80px;
+    margin-top: 5px;
+}
+
+fieldset {
+    height: 400px;
+    width: 600px;
+    padding: 40px;
+    display: flex;
+    margin-left: 20px;
+    color: #fff;
+}
+
+#nome {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#email {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+
+#comentario {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#submit {
+    padding: 10px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#submit:hover{
+    color: #000;
+    width: 230px;
+    padding: 12px;
+    transition: 0.5s ease-in-out;
+    font-weight: 500;
+    background-color: #D9C398;
+    box-shadow: 0px 10px 50px 2px rgb(126, 163, 141);
+}
+
+#contatos {
+    margin-left: 20px;
+}
+
+#contatos h2{
+    font-size: 18px;
+}
+
+#social{
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#social img:hover{
+    transition: 0.5s;
+    width: 50px;
+}
+
+#social a{
+    text-decoration: none;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+#rodape{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#rodape h3,p{
+    color: white;
+}
+
+#rodape h3{
+    font-size: 20px;
+}
+
+#rodape p{
+    font-size: 16px;
+}
+
+#texto-rodape p{
+    margin-top: 20px;
+}
+
+
+#links h3{
+    margin-left: 18%;
+    margin-top: 10%;
+}
+
+#links li a{
+    line-height: 30px;
+}
+
+#links li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#suporte h3{
+    margin-left: 12%;
+    margin-top: 10%;
+}
+
+#suporte li a{
+    line-height: 30px;
+    color: #fff;
+}
+
+#suporte li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#contato h3{
+    margin-top: 5%;
+}
+
+#contato li p{
+    font-size: 14px;
+}
